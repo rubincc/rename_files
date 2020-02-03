@@ -18,7 +18,7 @@ if len(sys.argv) != 3:
     print(
         '''
     USAGE:
-    filename_replace.py <PATH> <garbage_string>
+    rename_files.py <PATH> <garbage_string>
     PATH - an absolute or relative path
     garbage_string - a part of the filename that have to be deleted.
     
