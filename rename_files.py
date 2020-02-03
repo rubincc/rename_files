@@ -35,14 +35,14 @@ else:
 # Scans recursively for files in the scan_path
 for (dirpath, dirnames, filenames) in os.walk(scan_path):
     for f in filenames:
-        old_string = os.path.join(dirpath,f)
-        new_string = old_string.replace(garbage_string, '')
+        old_name = os.path.join(dirpath,f)
+        new_name = old_string.replace(garbage_string, '')
         
         # renames the files with cleaned names
         if Path(new_string).is_file():
-            print(f"The file {new_string} exist already. Did nothing.")
+            print(f"The file {new_name} exist already. Did nothing.")
         else:
-            os.renames(old_string, new_string)
-            print("The file {0} was renamed as {1}".format(old_string, new_string))
+            os.renames(old_name, new_name)
+            print("The file {0} was renamed as {1}".format(old_name, new_name))
 
 
