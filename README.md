@@ -11,5 +11,7 @@ Recursively rename files on a given __path__ substracting from the name a provid
     completely erased from the name of the file regardless of
     their position in the name.
 
+Until otherwise specified this is only a test project.
+ 
 ### TO DO:
 - rewrite to use pathlike object from pathlib to be more portable.
