@@ -36,13 +36,26 @@ else:
 for (dirpath, dirnames, filenames) in os.walk(scan_path):
     for f in filenames:
         old_name = os.path.join(dirpath,f)
-        new_name = old_string.replace(garbage_string, '')
+        # print(f"Short filename is {f}")
+
+        # test if the filename contains garbage_string
+        if garbage_string in old_name:
+            print(f"Old name {old_name} contains {garbage_string}.")
+            new_name = old_name.replace(garbage_string, '')
+            print(f"New name is {new_name}.")
         
-        # renames the files with cleaned names
-        if Path(new_string).is_file():
-            print(f"The file {new_name} exist already. Did nothing.")
-        else:
-            os.renames(old_name, new_name)
-            print("The file {0} was renamed as {1}".format(old_name, new_name))
-
-
+            # renames the files with cleaned names
+            if Path(new_name).is_file():
+                # The condition in this loop silently overwrite an existing file !!!
+                # Here it should rename the existing file to save his content
+                # like this:
+                print(f"The file {new_name} exist already and will be saved as {new_name}.bak")
+                # os.renames(new_name, new_name + ".bak")
+                #
+                # print(f"The file {new_name} exist already. Did nothing.")
+                # continue # just for supressing the above message
+            # else:
+            #     os.renames(old_name, new_name)
+            #     print("The file {0} was renamed as {1}".format(old_name, new_name))
+            #
+          
