@@ -3,7 +3,8 @@
 02.02.2020 - 20:57 - CCR
 Search in filenames for a given PATH and deletes garbage
 string from them.
-Renames the files with the new, cleaned, name.
+Renames the files with the new, cleaned, name testing for
+not accidentally overwritting an existing file.
 
 Pay attention to garbage_string provided!! All occurrences will be
 completely erased from the name of the file regardless of
