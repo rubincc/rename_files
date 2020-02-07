@@ -47,7 +47,7 @@ for (dirpath, dirnames, filenames) in os.walk(scan_path):
 
         # test if the filename contains garbage_string
         if garbage_string in old_name:
-            print(f"Old name {old_name} contains {garbage_string} so will be changed.")
+            print(f"The file {old_name} contains the string {garbage_string} so will be changed.")
             # subtract the garbage_string from old_name in new_name
             new_name = old_name.replace(garbage_string, '')
             print(f"New name will be {new_name}.")
