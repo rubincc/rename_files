@@ -57,3 +57,6 @@ Until otherwise specified this is only a test project.
  
 ### TO DO:
 - rewrite to use pathlike object from pathlib to be more portable.
+
+### Notes on `dev`
+Comment on dev `branch`.
