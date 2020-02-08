@@ -60,3 +60,5 @@ Until otherwise specified this is only a test project.
 
 ### testing branch
 This is a comment in `testing` branch.
+
+New comment in `testing` after `master` and `dev` diverged.
