@@ -60,3 +60,5 @@ Until otherwise specified this is only a test project.
 
 ### Notes
 This is the first commit on `master branch` after creating new branch `dev`.
+
+Comment on `master` after `dev` and `testing`.
