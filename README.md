@@ -57,3 +57,6 @@ Until otherwise specified this is only a test project.
  
 ### TO DO:
 - rewrite to use pathlike object from pathlib to be more portable.
+
+### Notes
+This is the first commit on `master branch` after creating new branch `dev`.
