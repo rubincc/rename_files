@@ -59,4 +59,8 @@ Until otherwise specified this is only a test project.
 - rewrite to use pathlike object from pathlib to be more portable.
 
 ### Notes on `dev`
-Comment on dev `branch`.
+Comment on `dev branch`.
+### testing branch
+This is a comment in `testing` branch.
+
+New comment in `testing` after `master` and `dev` diverged.
